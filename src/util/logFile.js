@@ -96,7 +96,7 @@ exports.error = error;
        };
  
        try{
-          OriginalVersion = JSON.parse(body).logger;
+          OriginalVersion = JSON.parse(body).logFIle;
        }catch(e){
           console.log(` \u001b[41m ERROR \u001b[0m \u001b[31mFailed to parse text to json.\u001b[0m`);
           console.log(e);
