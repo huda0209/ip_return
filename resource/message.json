@@ -1,0 +1,7 @@
+{
+    "serviceDown" : "Service is down now.",
+    "NotAllowMethod" : "This http method don't allow.",
+    "NoSessionID" : "You didn't set sessionID on request head.",
+    "UnKnownSessionId" : "This session id isn't known.",
+    "CantformatIPv4" : "Your IP Address cannot format ipv4."
+}
