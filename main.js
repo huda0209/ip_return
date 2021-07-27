@@ -53,12 +53,12 @@ if(systemData.protocol=="https"){
     }, app)
     .listen(systemData.port, ()=>{
         serviceStatus.responce = "green";
-        log.info(`IP RETURN is ready.\n        ver. {green}${package.version}{reset}\n        protocol : https\n        start up : {green}${(new Date()).toFormat('DDD MMM DD YYYY HH24:MI:SS')}{reset}\n        repository : {green}${package.repository}{reset}\n        created by {green}${package.author}{reset}\n`);
+        log.info(`IP RETURN is ready.\n        ver. {green}${package.version}{reset}\n        protocol : {green}https{reset}\n        start up : {green}${(new Date()).toFormat('DDD MMM DD YYYY HH24:MI:SS')}{reset}\n        repository : {green}${package.repository}{reset}\n        created by {green}${package.author}{reset}\n`);
     });
 }else if(systemData.protocol=="http"){
     app.listen(systemData.port, ()=>{
         serviceStatus.responce = "green";
-        log.info(`IP RETURN is ready.\n        ver. {green}${package.version}{reset}\n        protocol : http \n        start up : {green}${(new Date()).toFormat('DDD MMM DD YYYY HH24:MI:SS')}{reset}\n        repository : {green}${package.repository}{reset}\n        created by {green}${package.author}{reset}\n`);
+        log.info(`IP RETURN is ready.\n        ver. {green}${package.version}{reset}\n        protocol : {green}http{reset} \n        start up : {green}${(new Date()).toFormat('DDD MMM DD YYYY HH24:MI:SS')}{reset}\n        repository : {green}${package.repository}{reset}\n        created by {green}${package.author}{reset}\n`);
     });
 }else{
     log.error(`{red}Invalid protocol.{reset} Please set protocol {green}"https"{reset} or {green}"http"{reset}.`);
