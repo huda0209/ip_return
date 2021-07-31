@@ -50,7 +50,7 @@ module.exports =  {
             },
             protocol : {
                 replace : true,
-                default : "http"
+                default : "https"
             }
         }
     },
