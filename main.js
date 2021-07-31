@@ -43,7 +43,7 @@ const systemData = config.loadConfig("system.json");
 const userData = config.loadConfig("user.json");
 
 if(systemData.protocol=="https"){
-    if(!fs.existsSync('./keys/private.pem') || !fs.existsSync('./keys/cert.pem')){
+    if(!fs.existsSync('./keys/private.pem') && !fs.existsSync('./keys/cert.pem')){
         log.error(`{red}Cannot find "private key" or "server certificate".{reset} Please set files in keys directory.`);
         process.exit(0);
     }
